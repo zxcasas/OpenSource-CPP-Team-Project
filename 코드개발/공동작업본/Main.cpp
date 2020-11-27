@@ -2,6 +2,7 @@
 #include "Spawner.h"
 #include "Bear.h"
 #include "DarkElf.h"
+#include "Player.h"
 
 #include <iostream>
 
@@ -20,12 +21,7 @@ int main(int argc, char const* argv[])
 	bear->hi();
 	bear->MobAttack();
 
-	Monster* darkelfPrototype = new DarkElf(1, 2, 3);
+	Player* player1 = new Player(1, 2, 3);
 
-	Spawner* darkelfSpawner = new Spawner(darkelfPrototype);
-
-	Monster* darkelf = darkelfSpawner->spawnMonster();
-
-	darkelf->hi();
-	darkelf->MobAttack();
+	player1->hi();
 }

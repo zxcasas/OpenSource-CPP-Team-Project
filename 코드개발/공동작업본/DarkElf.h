@@ -29,7 +29,6 @@ public:
 
 	virtual void hi()
 	{
-		Elf:hi();
 		cout << "다크엘프(체력:" << m_Health << " 공격력:" << m_Ark << " 방어력:" << m_Def << ")이 소환 되었습니다." << endl;
 	}
 

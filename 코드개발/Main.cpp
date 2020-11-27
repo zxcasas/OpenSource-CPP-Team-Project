@@ -28,4 +28,8 @@ int main(int argc, char const* argv[])
 
 	darkelf->hi();
 	darkelf->MobAttack();
+	
+	Player* player1 = new Player(1, 2, 3);
+
+	player1->hi();
 }
